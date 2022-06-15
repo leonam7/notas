@@ -6,7 +6,7 @@ try {
     
     $nome = (isset($_POST["nome"]) && $_POST["nome"] !=null) ? $_POST['nome'] :"";
     $disciplina = (isset($_POST["disciplina"]) && $_POST["disciplina"] !=null) ? $_POST["disciplina"] :"";
-    $nota1 = (isset($_POST["nota_1"]) && $_POST["nota_1"] !=null) ? $_POST["nota_1"] :"";
+    $nota_1 = (isset($_POST["nota_1"]) && $_POST["nota_1"] !=null) ? $_POST["nota_1"] :"";
     $nota_2 = (isset($_POST["nota_2"]) && $_POST["nota_2"] !=null) ? $_POST["nota_2"] :"";
     
     $stmt = $conn->prepare("INSERT INTO j0opn8umqajetzdp.notas (nome,disciplina,nota_1,nota_2) 
