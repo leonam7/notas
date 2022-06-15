@@ -22,7 +22,7 @@ if ($nome != "" and $disciplina != "" ) {
         if ($stmt->execute()) {
             echo"Cadastro realizado com sucesso!";
         } else {
-            echo "Erro ao tentar efetuar o cadastro";
+            echo "Erro ao tentar cadastrar nota";
         } 
 }
 }else {
