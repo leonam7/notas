@@ -44,7 +44,7 @@
         try {
             
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $stmt = $conn->prepare("SELECT * from ratuff2rowij3xi9.notas");
+            $stmt = $conn->prepare("SELECT * from j0opn8umqajetzdp.notas");
             $stmt->execute();
        
             $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
