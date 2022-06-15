@@ -9,7 +9,7 @@ try {
     $nota1 = (isset($_POST["nota_1"]) && $_POST["nota_1"] !=null) ? $_POST["nota_1"] :"";
     $nota_2 = (isset($_POST["nota_2"]) && $_POST["nota_2"] !=null) ? $_POST["nota_2"] :"";
     
-    $stmt = $conn->prepare("INSERT INTO ratuff2rowij3xi9.notas (nome,disciplina,nota_1,nota_2) 
+    $stmt = $conn->prepare("INSERT INTO j0opn8umqajetzdp.notas (nome,disciplina,nota_1,nota_2) 
     VALUES (:nome, :disciplina, :nota_1, :nota_2)");
     $stmt ->bindParam(':nome',$nome);
     $stmt ->bindParam(':disciplina',$disciplina);
