@@ -1,9 +1,9 @@
 <?php
 function connection(){
-    $servername = "qao3ibsa7hhgecbv.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
-    $username = "derasq3ycsmz8542";
-    $password = "y6xfzm8fs7nr34ro";
-    $database = "ratuff2rowij3xi9";
+    $servername = "eanl4i1omny740jw.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+    $username = "tib15plrbib03qf8";
+    $password = "etq5mj2qhrqz66iy";
+    $database = "j0opn8umqajetzdp";
 try {
 $conn =  new PDO("mysql:host=$servername;database=$database;charset=utf8", $username, $password);
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
