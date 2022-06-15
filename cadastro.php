@@ -6,19 +6,19 @@ try {
     
     $nome = (isset($_POST["nome"]) && $_POST["nome"] !=null) ? $_POST['nome'] :"";
     $disciplina = (isset($_POST["disciplina"]) && $_POST["disciplina"] !=null) ? $_POST["disciplina"] :"";
-    $nota1 = (isset($_POST["nota1"]) && $_POST["nota1"] !=null) ? $_POST["nota1"] :"";
-    $nota2 = (isset($_POST["nota2"]) && $_POST["nota2"] !=null) ? $_POST["nota2"] :"";
+    $nota1 = (isset($_POST["nota_1"]) && $_POST["nota_1"] !=null) ? $_POST["nota_1"] :"";
+    $nota_2 = (isset($_POST["nota_2"]) && $_POST["nota_2"] !=null) ? $_POST["nota_2"] :"";
     
-    $stmt = $conn->prepare("INSERT INTO ratuff2rowij3xi9.notas (nome,disciplina,nota1,nota2) 
-    VALUES (:nome, :disciplina, :nota1, :nota2)");
+    $stmt = $conn->prepare("INSERT INTO ratuff2rowij3xi9.notas (nome,disciplina,nota_1,nota_2) 
+    VALUES (:nome, :disciplina, :nota_1, :nota_2)");
     $stmt ->bindParam(':nome',$nome);
     $stmt ->bindParam(':disciplina',$disciplina);
-    $stmt ->bindParam(':nota1',$nota1);
-    $stmt ->bindParam(':nota2',$nota2);
+    $stmt ->bindParam(':nota_1',$nota_1);
+    $stmt ->bindParam(':nota_2',$nota_2);
     echo $nome;
-    echo $nota1;
+    echo $nota_1;
 if ($nome != "" and $disciplina != "" ) {
-        if ($nota1!="" and $nota2 !=""){
+        if ($nota_1!="" and $nota_2 !=""){
         if ($stmt->execute()) {
             echo"Cadastro realizado com sucesso!";
         } else {
