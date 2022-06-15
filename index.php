@@ -21,11 +21,11 @@
             </div>
             <div class="form-group">
                 <label for="exampleInputPassword1">Nota 01</label>
-                <input type="number" class="form-control" name="nota1" id="nota1" placeholder="Nota">
+                <input type="number" class="form-control" name="nota_1" id="nota_1" placeholder="Nota">
             </div>
             <div class="form-group">
                 <label for="exampleInputPassword1">Nota 02</label>
-                <input type="number" class="form-control" name="nota2" id="nota2" placeholder="Nota">
+                <input type="number" class="form-control" name="nota_2" id="nota_2" placeholder="Nota">
             </div>
             <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
